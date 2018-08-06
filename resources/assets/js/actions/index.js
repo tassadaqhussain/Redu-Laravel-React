@@ -5,5 +5,5 @@ export const selectUser = (user) => {
     }
 };
 export const setCampaignType = (product) => {
-    return {type: 'GET_PRODUCTS', products: product}
+    return {type: 'GET_PRODUCTS', payload: product}
 };
