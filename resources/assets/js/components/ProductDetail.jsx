@@ -7,7 +7,7 @@ class ProductDetail extends Component {
     render() {
         console.log(this.props.product);
         if(!this.props.product){
-            return (<div>This is test........</div>);
+            return (<div>No Record Found be Patient ......</div>);
         }
         return (
 

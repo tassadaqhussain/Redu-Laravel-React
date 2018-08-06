@@ -56239,7 +56239,7 @@ var ProductDetail = function (_Component) {
                 return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
                     null,
-                    'This is test........'
+                    'No Record Found be Patient ......'
                 );
             }
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
