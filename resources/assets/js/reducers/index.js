@@ -3,6 +3,7 @@ import UserReducer from './reducer-users';
 import ActiveUserReducer from './reducer-active-user';
 import ProductReducer from './poducts';
 import ShopReducer from './shops';
+import PruductJson from '../components/ProductJson';
 
 /*
  * We combine all reducers into a single object before updated data is dispatched (sent) to store
@@ -12,6 +13,7 @@ import ShopReducer from './shops';
 const allReducers = combineReducers({
     users: UserReducer,
     products:ProductReducer,
+    productJson:PruductJson,
     activeUser: ActiveUserReducer,
     shops:ShopReducer
 

@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import {setCampaignType} from '../actions/index'
+import {setCampaignType} from '../actions/index';
+
 class Product extends Component {
     renderList() {
         return this.props.products.map((product) => {
@@ -15,18 +16,30 @@ class Product extends Component {
             );
         });
     }
+    formRender(){
+        return this.props.PruductJson.map((data)=>{
+            return(
+                <input type={data.type} name={data.name} key={data.id} value={data.value} />
+            )
+        });
+    }
 
     render() {
         return (
-            <ul>
-                {this.renderList()}
-            </ul>
+            <div>
+                <ul>
+                    {this.renderList()}
+                </ul>
+                {this.formRender()}
+            </div>
+
         );
     }//..... end of render() .....//
 }//..... end of Product.
 function mapStateToProps(state) {
     return {
-        products: state.products
+        products: state.products,
+        PruductJson: state.productJson
     };
 }
 

@@ -10,3 +10,7 @@ export const setCampaignType = (product) => {
 export const getDefaultData = (data) =>{
     return {type:'GET_LIST',payload:data}
 };
+
+export const getFormData = (data) =>{
+    return {type:'GET_FORM_DATA',payload:data}
+};
